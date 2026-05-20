@@ -5,21 +5,21 @@
 class ShortcutStatusline < Formula
   desc "A CLI that prints info about the current Shortcut story for use in a shell statusline"
   homepage "https://github.com/justincampbell/shortcut-statusline"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/justincampbell/shortcut-statusline/releases/download/v0.1.0/shortcut-statusline_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8dcb6ddd5fcba6f9e06232e05232f90e69ca9e1c8a5f8971263e8425a06d8375"
+      url "https://github.com/justincampbell/shortcut-statusline/releases/download/v0.2.0/shortcut-statusline_0.2.0_darwin_amd64.tar.gz"
+      sha256 "4e12c52ccb6da2dae3ed42d80e626f665d9504c8a25ca9e43a171901e03df1d6"
 
       define_method(:install) do
         bin.install "shortcut-statusline"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/justincampbell/shortcut-statusline/releases/download/v0.1.0/shortcut-statusline_0.1.0_darwin_arm64.tar.gz"
-      sha256 "583389819cbb3702b5a76bd0cdcdc913ef5c5ec7e41d520a25fcdf975c267dd6"
+      url "https://github.com/justincampbell/shortcut-statusline/releases/download/v0.2.0/shortcut-statusline_0.2.0_darwin_arm64.tar.gz"
+      sha256 "458a3abc741970320476b24a161d583def3fdb142d1252636759ceec1658865c"
 
       define_method(:install) do
         bin.install "shortcut-statusline"
@@ -29,15 +29,15 @@ class ShortcutStatusline < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/justincampbell/shortcut-statusline/releases/download/v0.1.0/shortcut-statusline_0.1.0_linux_amd64.tar.gz"
-      sha256 "1c40d348957a0056848525753422a7a27e4cb4bbe98ee843c7e3a209920394db"
+      url "https://github.com/justincampbell/shortcut-statusline/releases/download/v0.2.0/shortcut-statusline_0.2.0_linux_amd64.tar.gz"
+      sha256 "6866cc7624f2c510eac1a47388775b7b72e677fe36108a6bd87eaed1969b55a1"
       define_method(:install) do
         bin.install "shortcut-statusline"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/justincampbell/shortcut-statusline/releases/download/v0.1.0/shortcut-statusline_0.1.0_linux_arm64.tar.gz"
-      sha256 "d308a6296da20dea3a6a17b5ba9f9ea101d2f8bdd6f84a50602194ac8bd9dce1"
+      url "https://github.com/justincampbell/shortcut-statusline/releases/download/v0.2.0/shortcut-statusline_0.2.0_linux_arm64.tar.gz"
+      sha256 "7581070201b53d213aff47730f857642fea74afa6579e5df7b31ff40e090d937"
       define_method(:install) do
         bin.install "shortcut-statusline"
       end

@@ -5,21 +5,21 @@
 class Bfctl < Formula
   desc "CLI for backing up and inspecting Betaflight flight controller configuration over USB"
   homepage "https://github.com/justincampbell/bfctl"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/justincampbell/bfctl/releases/download/v0.1.0/bfctl_0.1.0_darwin_amd64.tar.gz"
-    sha256 "ccc3e7e24209895142995336dd91f6eb16760743ea8cfc912f350d38a2432335"
+    url "https://github.com/justincampbell/bfctl/releases/download/v0.2.0/bfctl_0.2.0_darwin_amd64.tar.gz"
+    sha256 "277f46fa951b0880feee977ad1225c32e0a6958e3126131f9a47f644e5e24132"
 
     define_method(:install) do
       bin.install "bfctl"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/justincampbell/bfctl/releases/download/v0.1.0/bfctl_0.1.0_darwin_arm64.tar.gz"
-    sha256 "1cbff89f74cf1cdc732b8aa5306794a853e3da535a725185c03e2ac7a76a9c24"
+    url "https://github.com/justincampbell/bfctl/releases/download/v0.2.0/bfctl_0.2.0_darwin_arm64.tar.gz"
+    sha256 "2e9346af87a9e055e966a625e69ef9230a21580aa65123e486b70bc84a630e7e"
 
     define_method(:install) do
       bin.install "bfctl"

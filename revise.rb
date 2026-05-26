@@ -5,21 +5,21 @@
 class Revise < Formula
   desc "A terminal UI for reviewing local git changes and sending feedback to Claude Code"
   homepage "https://github.com/justincampbell/revise"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/justincampbell/revise/releases/download/v0.4.1/revise_0.4.1_darwin_amd64.tar.gz"
-      sha256 "dd6f03bd41da11f3e4ebef1cfa8c186faa5cc4da5118f71f1a5013cae191d5e3"
+      url "https://github.com/justincampbell/revise/releases/download/v0.4.2/revise_0.4.2_darwin_amd64.tar.gz"
+      sha256 "f28a6805f5cd2dbca2355ed61c460a5aaba02b2b1203a079c760cc5da9565da9"
 
       define_method(:install) do
         bin.install "revise"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/justincampbell/revise/releases/download/v0.4.1/revise_0.4.1_darwin_arm64.tar.gz"
-      sha256 "e6576a89d40d68a86d50d86b039647a2d3a995d5e8c668b64e77f1e11c54fc89"
+      url "https://github.com/justincampbell/revise/releases/download/v0.4.2/revise_0.4.2_darwin_arm64.tar.gz"
+      sha256 "46b01149048d74a97640561e205a1ad56457269bcff00c5443a6ef57ef32b627"
 
       define_method(:install) do
         bin.install "revise"
@@ -29,15 +29,15 @@ class Revise < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/justincampbell/revise/releases/download/v0.4.1/revise_0.4.1_linux_amd64.tar.gz"
-      sha256 "9d5b1964a2e14b98f4d0bd80b14ccaeb01546a0c06985d72d09297c167faaa81"
+      url "https://github.com/justincampbell/revise/releases/download/v0.4.2/revise_0.4.2_linux_amd64.tar.gz"
+      sha256 "be5b458d14c8d4e6be86d45d0768174a71bc0baafddac82dab256555d0112111"
       define_method(:install) do
         bin.install "revise"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/justincampbell/revise/releases/download/v0.4.1/revise_0.4.1_linux_arm64.tar.gz"
-      sha256 "f023eaf12205d556259e2f38c1fb6581455ea0b61d17d9e8083a60c16b851f5e"
+      url "https://github.com/justincampbell/revise/releases/download/v0.4.2/revise_0.4.2_linux_arm64.tar.gz"
+      sha256 "8289551beb817f4eff641cf196a965bc7e9004ca9ed6f53202ea6a1576a7267e"
       define_method(:install) do
         bin.install "revise"
       end
